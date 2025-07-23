@@ -1,13 +1,12 @@
-import React from 'react'
-import './Card.css'
+import React from "react";
+import "./Card.css";
 
-function Card({cardName}) {
-  
+function Card({ cardName }) {
   return (
-    <div className='card-container'>
-        <img src={`cards/${cardName}.png`} alt="" />
+    <div className="card-container">
+      <img src={`blackjack/cards/${cardName}.png`} alt="" />
     </div>
-  )
+  );
 }
 
-export default Card
+export default Card;
