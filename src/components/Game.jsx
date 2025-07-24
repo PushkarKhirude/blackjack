@@ -5,6 +5,7 @@ import Player from "./Player";
 function Game({ playerDeck, dealerDeck, dealCard, shuffle, build }) {
   const [plrDeck, setPlrDeck] = useState(playerDeck); //uplifted state cuz player component cant execute, need to ask someone
   const [dlrDeck, setDlrDeck] = useState(dealerDeck);
+  const [stayFlag, setStayFlag] = useState(false);
 
   let dealerSum = 0;
   let playerSum = 0;
@@ -58,6 +59,7 @@ function Game({ playerDeck, dealerDeck, dealCard, shuffle, build }) {
   function handleReset() {
     build(); //this will create a brand new deck
     shuffle(); //this will shuffle the new deck
+    setStayFlag(false);
     setDlrDeck(() => {
       //these setter will deal cards to dealer and player
       const newDeck = [];
@@ -76,10 +78,7 @@ function Game({ playerDeck, dealerDeck, dealCard, shuffle, build }) {
   dealerSum = calculateScore(dlrDeck);
 
   return (
-    <div className="text-center">
-      <button className="border " onClick={handleReset}>
-        reset
-      </button>
+    <div className="text-center mt-10">
       <Dealer dealerDeck={dlrDeck} dealerScore={dealerSum} />
       <Player
         playerDeck={plrDeck}
@@ -87,7 +86,17 @@ function Game({ playerDeck, dealerDeck, dealCard, shuffle, build }) {
         handleSetPlrDeck={handleSetPlrDeck}
         handleSetDlrDeck={handleSetDlrDeck}
         dealerScore={dealerSum}
+        stayFlag={stayFlag}
+        setStayFlag={setStayFlag}
       />
+      <div className="reset-container ">
+        <button
+          className="border hover:bg-amber-200 active:bg-amber-400 cursor-pointer"
+          onClick={handleReset}
+        >
+          reset ↺
+        </button>
+      </div>
     </div>
   );
 }

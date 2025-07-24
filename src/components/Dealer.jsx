@@ -5,7 +5,7 @@ import "./Dealer.css";
 function Dealer({ dealerDeck, dealerScore }) {
   return (
     <div>
-      <h1 className="dealer-score">Dealer: {dealerScore}</h1>
+      <h1 className="dealer-score font-bold">Dealer: {dealerScore}</h1>
       <div className="dealer">
         {dealerDeck.map((cardName, i) => {
           return <Card key={i} cardName={cardName} />;
