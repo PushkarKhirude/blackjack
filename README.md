@@ -5,6 +5,7 @@
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 ---
 
@@ -46,6 +47,15 @@ npm run dev
 
 ## 📸 Screenshots
 
+Click the Reset button to start a new round.
+![Gameplay Screenshot](screenshots/reset.png)
+
+Click on the Hit button to deal more cards if you are not happy with your hand.
+![Gameplay Screenshot](screenshots/hit.png)
+
+Click the Stay button if you are happy with your cards and to reveal delear's cards.
+![Gameplay Screenshot](screenshots/stay.png)
+
 ## ✨ Future Improvements
 
 - Add animations and sound effects
@@ -56,6 +66,8 @@ npm run dev
 Contributions are welcome! Feel free to open issues or submit pull requests for improvements or new features.
 
 ## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
 
 ## 📬 Contact
 
