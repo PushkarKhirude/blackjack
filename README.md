@@ -25,8 +25,8 @@ A simple, free-to-play Blackjack game built for the web — no betting, no accou
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: HTML, CSS, JavaScript _(or React, if applicable)_
-- **Styling**: CSS / Tailwind / Bootstrap _(specify what you used)_
+- **Frontend**: HTML, CSS, JavaScript, React
+- **Styling**: CSS / Tailwind
 
 ## 🚀 Getting Started
 
